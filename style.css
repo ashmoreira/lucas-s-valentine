@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("back.jpeg");
+    font-family: rainyhearts;
 }
 
 /* envelope screen */
@@ -29,13 +31,13 @@ body {
 }
 
 #envelope {
-    width:200px;
-    animation:pulse 1.5s infinite;
+    width: 200px;
+    animation: pulse 1.5s infinite;
     cursor: pointer;
 }
 
 #letter-container {
-    display:none;
+    display: none;
     position: fixed;
     inset: 0;
     justify-content: center;
@@ -43,17 +45,17 @@ body {
 }
 
 .letter-window{
-    width:90vw;
+    width: 90vw;
     max-width: 800px;
     aspect-ratio: 3/2;
     padding: 20px 20px 0 20px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-image: url("background\ 2.png");
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: radius 12px;
