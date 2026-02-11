@@ -4,24 +4,24 @@ const letter = document.getElementById("letter-container");
 const noBtn = document.querySelector(".no-btn");
 const yesBtn = document.querySelector(".yes-btn");
 
-const title = document.getElementById('letter-title');
-const catImg = document.getElementById('letter-cat');
-const buttons = document.getElementById('letter-buttons');
-const finalText = document.getElementById('final-text');
+const title = document.getElementById("letter-title");
+const catImg = document.getElementById("letter-cat");
+const buttons = document.getElementById("letter-buttons");
+const finalText = document.getElementById("final-text");
 
 // click envelope
 
-envelope.addEventListener('click', ()=> {
-    envelope.style.display = 'none';
-    letter.style.display = 'flex';
+envelope.addEventListener("click", ()=> {
+    envelope.style.display = "none";
+    letter.style.display = "flex";
 
-    setTimeeout( () => {
-        document.querySelector(".letter-window").classList.add('open');
+    setTimeout( () => {
+        document.querySelector(".letter-window").classList.add("open");
     },50);
 });
 
 // logic to make the no button move
-noBtn.addEventListener('mouseover', () => {
+noBtn.addEventListener("mouseover", () => {
     const min = 200;
     const max = 200;
 
@@ -31,6 +31,6 @@ noBtn.addEventListener('mouseover', () => {
     const moveX = Math.cos(angle) * distance;
     const moveY = Math.sin(angle) * distance;
 
-    noBtn.style.transition = 'transform 0.3s ease';
-    noBtn.style.transform = ' translate(${moveX}px, ${moveY}px';
+    noBtn.style.transition = "transform 0.3s ease";
+    noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
