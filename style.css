@@ -60,7 +60,7 @@ body {
     background-image: url("letter_back.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 30% center;
     border-radius: 12px;
     gap: 1px;
     padding-top: 180px;
@@ -76,7 +76,7 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin: 5px 0 10px 0;
 }
 
@@ -146,4 +146,10 @@ display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
+}
+
+.letter-window p, .letter-window h1, .final-text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
 }
