@@ -1,4 +1,4 @@
-// elements 
+// elements
 const envelope = document.getElementById("envelope-container");
 const letter = document.getElementById("letter-container");
 const noBtn = document.querySelector(".no-btn");
@@ -20,7 +20,8 @@ envelope.addEventListener("click", () => {
     },50);
 });
 
-// logic to make the no button move
+// logic to move the no btn
+
 noBtn.addEventListener("mouseover", () => {
     const min = 200;
     const max = 200;
@@ -36,7 +37,7 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "yippeeee!";
+    title.textContent = "i was hoping you'd say yes ꒰ᐢ. .ᐢ꒱₊˚⊹";
 
     catImg.src = "gifofdoom.gif";
 
