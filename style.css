@@ -1,8 +1,7 @@
 @font-face {
     font-family: rainyhearts;
-    src : url('rainyhearts.ttf') format('truetype');
+    src: url("rainyhearts.ttf") format("truetype");
 }
-
 body {
     margin: 0;
     height: 100vh;
@@ -10,42 +9,43 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("back.jpeg");
-    font-family: rainyhearts;
+    font-family: rainyhearts
 }
 
-/* envelope screen */
+/* Envelope Screen */
 #envelope-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal centering */
+    justify-content: center;
     cursor: pointer;
 }
 
 @keyframes pulse {
     0% {
-        transform:scale(1);
+        transform:scale(2);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(2.2);
     }
     100% {
-        transform: scale(1);
+        transform: scale(2);
     }
 }
 
-    
 #envelope{
-    width: 200px;
+    width: 300px;
     animation: pulse 1.5s infinite;
     cursor: pointer;
 }
 
 #letter-container{
     display: none;
-    position: fixed;
+    position:fixed;
     inset: 0;
     justify-content: center;
     align-items: center;
 }
-
 
 .letter-window{
     width: 90vw;
@@ -75,18 +75,20 @@ body {
     opacity: 1;
 }
 
-h1{
-    font-size:30px;
+h1 {
+    font-size: 30px;
     margin:0;
-    text-align: center;
-    padding-bottom: 10%;
 }
 
-p {font-size: 40px;
+p {
+    font-size: 40px;
 }
+
+/* Cat */
 
 .cat {
-    width: 250px;
+    width: 200px;
+    margin: 10px 0;
     transition: width 0.4s ease;
 }
 
@@ -98,25 +100,26 @@ p {font-size: 40px;
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     position: relative;
 }
 
-.no-wrapper {
-    position: relative;
+.no-wrapper{
+    position:relative;
 }
 
 .btn {
-    width: 120 px;
+    width: 192px; /* 120px × 1.6 */
     cursor: pointer;
     user-select: none;
+    image-rendering: pixelated; /* keep pixel art sharp */
 }
 
 .yes-btn,
 .no-btn {
-    width:120px;
-    height: auto;
-    display: inline-block;
+width: 120px;
+height: auto;
+display: inline-block;
 }
 
 .yes-btn {
@@ -131,12 +134,15 @@ p {font-size: 40px;
     position: relative;
     transition: transform 0.15s ease;
     cursor: default;
-}
+} 
 
-.final-text {
+
+.final-text{
     font-size: 22px;
     line-height: 1.4;
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
+    background-color: rgba(255,240,240,0.5);
+    border-radius: 12px;
 }
