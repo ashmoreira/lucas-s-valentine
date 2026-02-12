@@ -54,7 +54,7 @@ body {
     padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     background-image: url("letter_back.png");
@@ -77,19 +77,20 @@ body {
 
 h1 {
     font-size: 30px;
-    margin:0;
+    margin: 5px 0 10px 0;
 }
 
 p {
     font-size: 40px;
 }
 
-/* Cat */
+/* cat */
 
 .cat {
     width: 200px;
-    margin: 10px 0;
-    transition: width 0.4s ease;
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: block;
 }
 
 .letter-window.final .cat {
@@ -109,7 +110,8 @@ p {
 }
 
 .btn {
-    width: 192px; /* 120px × 1.6 */
+    width: 20vw;
+    max-width: 200px;
     cursor: pointer;
     user-select: none;
     image-rendering: pixelated; /* keep pixel art sharp */
@@ -117,7 +119,6 @@ p {
 
 .yes-btn,
 .no-btn {
-width: 120px;
 height: auto;
 display: inline-block;
 }
